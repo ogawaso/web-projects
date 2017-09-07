@@ -1,0 +1,64 @@
+.sidebar {
+	position: absolute;
+	height: 100vh;
+	background-color: white;
+	box-shadow: 5px 0px 5px grey;
+}
+
+.sidebar:after {
+    clear: both;
+}
+
+.itemSet {
+	display: flex;
+	align-items: center;
+}
+
+.iconDiv {
+	width: 10vw;
+	display: inline-block;
+}
+
+.icon {
+	position: relative;
+	padding: 25%;
+	width: 50%;
+	display: none;
+}
+
+.icon.active {
+	display: block;
+}
+
+.textDiv {
+	display: none;
+}
+
+.itemText {
+	text-transform: uppercase;
+	text-align: left;
+	font-size: 2em;
+	font-weight: bold;
+}
+
+.padDiv {
+	display: none;
+}
+
+@media only screen and (min-width: 768px) {
+    .iconDiv {width: 9vw;}
+    .icon {width: 40%;padding: 30%;}
+}
+
+@media only screen and (min-width: 991px) {
+    .iconDiv {width: 8vw;}
+	.textDiv, .padDiv {display: inline-block;}
+	.padDiv {width: 3.5vw;}
+    .icon {width: 30%;padding: 35%;}
+}
+
+@media only screen and (min-width: 1199px) {
+    .iconDiv {width: 7vw;}
+	.padDiv {width: 4vw;}
+    .icon {width: 20%;padding: 40%;}
+}

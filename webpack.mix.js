@@ -12,9 +12,9 @@ let mix = require('laravel-mix');
  */
 
 mix
-	.js('imperius/scripts/app.js', 'public/imperius/js/app.js')
-	.sass('imperius/styles/app.scss', 'public/imperius/css/app.css')
-	.copyDirectory('imperius/src', 'public/imperius')
+	.js('imperium/scripts/app.js', 'public/imperium/js/app.js')
+	.sass('imperium/styles/app.scss', 'public/imperium/css/app.css')
+	.copyDirectory('imperium/src', 'public/imperium')
 	.js('justofada/scripts/app.js', 'public/justofada/js/app.js')
 	.sass('justofada/styles/app.scss', 'public/justofada/css/app.css')
 	.copyDirectory('justofada/src', 'public/justofada')
