@@ -11,8 +11,14 @@ let mix = require('laravel-mix');
  |
  */
 
-mix.js('src/app.js', 'dist/')
-   .sass('src/app.scss', 'dist/');
+mix
+	.js('imperius/scripts/app.js', 'public/imperius/js/app.js')
+	.sass('imperius/styles/app.scss', 'public/imperius/css/app.css')
+	.copyDirectory('imperius/src', 'public/imperius')
+	.js('justofada/scripts/app.js', 'public/justofada/js/app.js')
+	.sass('justofada/styles/app.scss', 'public/justofada/css/app.css')
+	.copyDirectory('justofada/src', 'public/justofada')
+	;
 
 // Full API
 // mix.js(src, output);
